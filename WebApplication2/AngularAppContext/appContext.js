@@ -37,15 +37,7 @@
     $httpProvider.interceptors.push('httpInterceptor');
     $routeProvider
         .when('/', {
-            templateUrl: myApp.Root + "Home/Index",
-            controller: "workItemTableController"
-        })
-        .when('/services', {
-            templateUrl: myApp.Root + 'WorkItemType/WorkItemTypes',
-            controller: "workItemTypesController"
-        })
-        .when('/service/:id', {
-            templateUrl: myApp.Root + 'WorkItemType/WorkItemType',
-            controller: "workItemTypeController"
+            templateUrl: myApp.Root + "Home/Home",
+            controller: "homeController"
         });
 });

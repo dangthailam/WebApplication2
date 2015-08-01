@@ -17,9 +17,13 @@ namespace WebApplication2
                 "~/Scripts/angular-route.js",
                 "~/Scripts/angular-animate.js",
                 "~/Scripts/angular-resource.js",
-                "~/Scripts/angular-sanitize.js",
-                "~/Scripts/angular-ui/ui-bootstrap-tpls.js",
-                "~/Scripts/angular-ui/ui-bootstrap.js"
+                "~/Scripts/angular-sanitize.js"
+                ));
+
+            bundles.Add(new ScriptBundle("~/angularUI").Include(
+                "~/Scripts/dialogs/*.js",
+                "~/Scripts/toaster/*.js",
+                "~/Scripts/angular-ui/*.js"
                 ));
 
             bundles.Add(new StyleBundle("~/content/css").Include(

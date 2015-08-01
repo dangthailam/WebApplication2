@@ -9,5 +9,10 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
+
+        public PartialViewResult Home()
+        {
+            return PartialView();
+        }
     }
 }
