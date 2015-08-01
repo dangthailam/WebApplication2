@@ -6,25 +6,37 @@ namespace WebApplication2
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            ScriptBundle bootstrapScripts = new ScriptBundle("~/Scripts/jquery-{version}.js");
 
-            bootstrapScripts.Include("~/Scripts/bootstrap.js");
+            bundles.Add(new ScriptBundle("~/js").Include(
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/bootstrap.js"
+                ));
 
-            ScriptBundle angularScripts = new ScriptBundle("~/Scripts/angular.js");
-
-            angularScripts.Include("~/Scripts/angular-route.js",
+            bundles.Add(new ScriptBundle("~/angular").Include(
+                "~/Scripts/angular.js",
+                "~/Scripts/angular-route.js",
+                "~/Scripts/angular-animate.js",
+                "~/Scripts/angular-resource.js",
+                "~/Scripts/angular-sanitize.js",
                 "~/Scripts/angular-ui/ui-bootstrap-tpls.js",
-                "~/Scripts/angular-ui/ui-bootstrap.js");
+                "~/Scripts/angular-ui/ui-bootstrap.js"
+                ));
 
-            StyleBundle bootstrapCss = new StyleBundle("~/Content/bootstrap.css");
+            bundles.Add(new StyleBundle("~/content/css").Include(
+                "~/Content/bootstrap.css",
+                "~/Content/bootstrap-theme.css",
+                "~/Content/ui-bootstrap-csp.css",
+                "~/Content/sb-admin-2.css"
+                ));
 
-            bootstrapCss.Include("~/Content/bootstrap-theme.css",
-                "~/Content/ui-bootstrap-csp.css");
+            bundles.Add(new ScriptBundle("~/angularDirectives").Include(
+                "~/AngularAppContext/Controllers/*.js",
+                "~/AngularAppContext/Services/*.js",
+                "~/AngularAppContext/Directives/*.js"
+                ));
 
-            bundles.Add(bootstrapScripts);
-            bundles.Add(angularScripts);
-            bundles.Add(bootstrapCss);
-            BundleTable.EnableOptimizations = true;
+
+            BundleTable.EnableOptimizations = false;
         }
     }
 }

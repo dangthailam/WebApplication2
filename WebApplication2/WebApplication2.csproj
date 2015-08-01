@@ -107,10 +107,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularAppContext\appIndex.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\sb-admin-2.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="Global.asax" />
     <Content Include="Icon.png" />
@@ -940,6 +942,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AngularAppContext\Controllers\" />
+    <Folder Include="AngularAppContext\Directives\" />
+    <Folder Include="AngularAppContext\Services\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Home\" />
