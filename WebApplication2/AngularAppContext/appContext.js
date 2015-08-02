@@ -39,5 +39,8 @@
         .when('/', {
             templateUrl: myApp.Root + "Home/Home",
             controller: "homeController"
+        }).when('/createcv', {
+            templateUrl: myApp.Root + "Cv/Create",
+            controller: "cvController"
         });
 });

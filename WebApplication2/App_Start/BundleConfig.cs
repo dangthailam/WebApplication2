@@ -30,6 +30,7 @@ namespace WebApplication2
                 "~/Content/bootstrap.css",
                 "~/Content/bootstrap-theme.css",
                 "~/Content/ui-bootstrap-csp.css",
+                "~/Content/custom.css",
                 "~/Content/shared.css",
                 "~/Content/font-awesome.css"
                 ));

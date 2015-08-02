@@ -1,0 +1,20 @@
+﻿/*.navbar {
+    min-height: 100px;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        margin-top: 101px !important;
+    }
+}*/
+
+.banner {
+    background-image: url(../Content/images/innerfade1.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+div.create-cv-btn {
+    margin-top: 190px;
+    margin-bottom: 190px;
+}
